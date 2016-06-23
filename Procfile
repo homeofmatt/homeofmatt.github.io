@@ -1,2 +1,2 @@
-jekyll: bundle exec jekyll serve --watch
+jekyll: bundle exec jekyll serve --watch --incremental
 guard:  bundle exec guard

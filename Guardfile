@@ -15,8 +15,8 @@
 #
 # and, you'll have to watch "config/Guardfile" instead of "Guardfile"
 
-require 'guard/jekyll_plus/config'
-jekyll_plus_options = {}
-guard 'jekyll-plus', jekyll_plus_options do
-  watch(Guard::JekyllPlus::Config.new(jekyll_plus_options).watch_regexp)
+ignore /^_site/ # NOTE: this can interfere with Guard::LiveReload
+
+guard "jekyll-plus" do
+  watch /.*/
 end

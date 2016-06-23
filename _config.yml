@@ -21,11 +21,13 @@ exclude:
   - Gemfile.lock
   - Guardfile
   - Procfile
+  - Rakefile
 
 assets:
     digest: true
     sources:
       - "_assets/styles"
+      - "_assets/javascripts"
       - "_vendor/materialize-src/sass"
       - "_vendor/materialize-src/js/bin"
 

@@ -4,20 +4,20 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <div class="parallax-container">
+    <div class="parallax">{% image leo_carillo class="banner-image" %}</div>
+  </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <div class="section white">
+    <div class="row container">
+      <h2 class="header">About Me</h2>
+      <p class="grey-text text-darken-3 lighten-3">Bacon ipsum dolor amet porchetta jerky ball tip beef leberkas ham hock. Meatloaf picanha bresaola, rump pastrami venison ball tip tongue capicola alcatra cow andouille pork belly. Flank jerky tri-tip, bresaola porchetta prosciutto sirloin fatback swine beef pig short ribs bacon. Corned beef meatloaf swine chicken jowl. Jowl pork belly short loin kevin meatloaf, pig kielbasa tri-tip swine bacon ground round tail.</p>
+      <p class="grey-text text-darken-3 lighten-3">Hamburger beef ribs chuck, andouille tail shankle capicola pork chop short ribs. Meatball brisket pork belly, beef ribs capicola jerky short loin chuck tenderloin shoulder corned beef kielbasa jowl meatloaf rump. Chuck flank biltong short ribs, kielbasa strip steak andouille salami. Landjaeger pork tri-tip pig swine, prosciutto doner ham meatloaf spare ribs.</p>
+    </div>
+  </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <div class="parallax-container">
+    <div class="parallax">{% image sandstone_peak class="banner-image"%}</div>
+  </div>
 
 </div>
